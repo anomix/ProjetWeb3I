@@ -1,0 +1,247 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-déc.-2014, 14:50:12
+    Author     : Corentin
+*/
+html {
+    background-color: #EAEAEA;
+}
+#page {
+    margin: 0 auto;
+    width: 80%;
+    color: #003399;
+}
+
+header {
+    background-image: linear-gradient(#003399,#99CCFF);
+    height: 190px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    //border: 1px solid black;
+}
+
+header h1 {
+    color: white;
+    line-height: 140px;
+}
+
+header p {
+    color: white;
+}
+
+/* Menu Horizontal*/
+
+#menu {
+    background-color: #99CCFF;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0px;
+    //border:1px solid black;
+    width: 100%
+    /*-moz-border-radius: 10px;
+    border-radius: 10px;*/
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    float: left;
+    width: 20%;
+    line-height: 40px;
+    background-color: #99CCFF;
+    color: #003399;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li a:hover{
+    background-color: #003399;
+    color: #99CCFF;
+}
+
+/* Menu choix -> produits_nm */
+
+#choix {
+    background-color: #99CCFF;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0px;
+    //border:1px solid black;
+    width: 100%
+    /*-moz-border-radius: 10px;
+    border-radius: 10px;*/
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+#choix ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#choix ul li a {
+    display: block;
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    background-color: #99CCFF;
+    color: #003399;
+    text-decoration: none;
+    text-align: center;
+}
+
+#choix ul li a:hover{
+    background-color: #003399;
+    color: #99CCFF;
+}
+
+/* table_accueil_m -> accueil_m */
+
+#table_accueil_m table{
+    width:100%;
+}
+
+#th1 {
+    width: 25%;
+    border: 1px solid #003399;
+}
+
+#th2 {
+    width: 75%;
+    border: 2px solid red;
+}
+
+/* table_default -> produit_nm */
+
+#table_default table {
+    width: 100%;
+}
+
+#table_default img {
+    width: 100%;
+}
+
+/* table_produit_nm -> produit_nm */
+
+#table_produit_nm table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_produit_nm td {
+    width: 50%;
+    border: 1px solid #003399;
+}
+
+#table_produit_nm img {
+    height: 100px;
+}
+
+/* Contenu */
+
+#contenu {
+    //width: 100%;
+    margin: 0 auto;
+    //float: left;
+    //border: 1px solid black;
+}
+
+/* formulaire_nm -> authentification_nm */
+
+#formulaire_nm {
+    width: 17.5%;
+    border: 2px solid #003399;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #99CCFF;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    //margin: 0 auto;
+    float: left;
+    text-align: center;
+    color: #003399;
+}
+
+/* table_newfacture_m -> newfacture_m.php */
+
+#table_newfacture_m {
+    width: 100%;
+    //border: 1px solid black;
+}
+
+#table_newfacture_m table {
+    width: 100%;
+    border: 1px solid #003399;
+    border-collapse: collapse;
+}
+
+#table_newfacture_m tfoot td{
+    width: 25%;
+}
+
+#tablethlnf {
+    width: 10%;
+    border: 1px solid #003399;
+}
+
+#tablethprnf {
+    width: 70%;
+    border: 1px solid #003399;
+}
+
+#tablethqnf {
+    width: 10%;
+    border: 1px solid #003399;
+}
+
+#tablethpxnf {
+    width: 10%;
+    border: 1px solid #003399;
+}
+
+#table_newfacture_m td {
+    border: 1px solid #003399;
+}
+
+#table_newfacture_m tfoot {
+    text-align: right;
+    //border: 1px solid #003399;
+}
+
+/* table_detail_produit -> detail_produit_m */
+
+#table_detail_produit table{
+    width: 100%;
+    height: 120px;
+}
+
+#table_detail_produit td {
+    width: 50%;
+}
+#table_detail_produit img {
+    height: 100px;
+}
+
+
+
