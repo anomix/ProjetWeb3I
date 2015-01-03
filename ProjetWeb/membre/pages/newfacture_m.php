@@ -1,14 +1,14 @@
 <?php
     include './nonmembre/lib/php/classes/produits_nm.class.php';
     include './nonmembre/lib/php/classes/produits_nmManager.class.php';
-    if(!isset($_SESSION['lignedf'])){
-        $_SESSION['lignedf']=0;
-    }
+    
         
     $mg = new produits_nmManager($db);
     if(!isset($_SESSION['valeur'])) {
         $_SESSION['valeur']="default";
+        $_SESSION['lignedf']=0;
     }
+
     if(isset($_GET['valeur'])) {
         $_SESSION['valeur'] = $_GET['valeur'];
     }
@@ -20,7 +20,10 @@
     <?php
     if($_SESSION['valeur']=="default"){
     ?>
-    <h1><?php if(isset($_SESSION['test'])){print "Facture n°".$_SESSION['test'];}?></h1>
+    <h1><?php if(isset($_SESSION['test'])){
+                print "Facture n°".$_SESSION['test'];
+    }
+    ?></h1>
     <table>
         <thead>
             <th id="tablethlnf">
@@ -66,15 +69,16 @@
             <tr><td colspan ="4"><a href="index.php?page=newfacture_m&valeur=ajout">Ajouter</a></td></tr>
         </tbody>
     </table>
+    <?php
+        if($_SESSION['lignedf']!=0){
+    ?>
     <table>
-            <td width="10%">
-                <?php $_SESSION['listeU']=$liste;?>
-                <a href="./membre/lib/php/classes/update_mManager.class.php">Ajouter</a>
-            </td>
-            <td width="75%"><input type="submit" id="submit_annuler" name="submit_annulerr" value="Annuler"/></td>
-            <td width="15%">Total: <?php if($_SESSION['lignedf']!=0){print $total;}else{print 0;}?> €</td>
+        <td width="10%"><a href="index.php?page=update_m&test=<?php print $_SESSION['test'];/*$_SESSION['lignedf']=0*/;?>">Valider</a>             
+        <td width="75%"><a href="index.php?page=delete_m&<?php print $_SESSION['test'];/*$_SESSION['lignedf']=0;*/?>">Annuler</a></td>
+        <td width="15%">Total: <?php if($_SESSION['lignedf']!=0){print $total;}else{print 0;}?> €</td>
     </table>
     <?php
+        }
     }
     ?>
     <?php

@@ -243,5 +243,42 @@ footer {
     height: 100px;
 }
 
+/* table_facture_m -> my_facture_m */
+
+#table_facture_m table {
+    width: 100%;
+    border: 1px solid #003399;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+#table_facture_m td {
+    width: 33%;
+    border: 1px solid #003399;
+}
+
+#table_facture_m a{
+    text-decoration: none;
+    color: #003399;
+}
+
+#table_facture_m visited{
+    color: #99CCFF;
+}
+
+#table_facture_detail table{
+    border: 1px solid #003399;
+    border-collapse:collapse;
+}
+
+#table_facture_detail td{
+    border: 1px solid #003399;
+}
+
+#table_facture_detail th{
+    border: 1px solid #003399;
+    background-color: #99CCFF;
+}
+
 
 

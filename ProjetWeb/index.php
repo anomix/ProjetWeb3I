@@ -53,12 +53,12 @@ and open the template in the editor.
                     if(isset($_SESSION['admin'])){
                         print "Bienvenue ".$_SESSION['nomUser']." ".$_SESSION['prenomUser'].", profitez bien de votre visite ! ";
                     }
-                    if(isset($_SESSION['page'])){
+                    /*if(isset($_SESSION['page'])){
                         if(isset($_GET['page'])) {
                             $_SESSION['page']= $_GET['page'];
                             print $_SESSION['page'];
                         }
-                    }
+                    }*/
                 ?>
                 </p>
             </header> 
@@ -124,9 +124,6 @@ and open the template in the editor.
                         }
                     ?>
                 </nav>
-            </section>
-            <section>
-                
             </section>
             <footer>
                 Editeur responsable Corentin Speckens

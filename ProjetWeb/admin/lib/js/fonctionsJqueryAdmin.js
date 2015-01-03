@@ -26,7 +26,7 @@ $(document).ready(function () {
                 //dataType: "json",
                 url: './admin/lib/php/ajax/AjaxLogin.php',		
                 success: function (data_du_php) {
-                    alert(data_du_php.retour);
+                    //alert(data_du_php.retour);
                     if (data_du_php.retour == 1) {
                         $('#login_form').remove();
                         //$('header#header').removeClass('reduire_opacity');
