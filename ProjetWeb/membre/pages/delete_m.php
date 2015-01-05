@@ -27,6 +27,8 @@
         if($retour==1){
             $flag=true;
             print "<h1>Annulation reussie</h1>";
+            $_SESSION['lignedf']=0;
+            $_SESSION['test']=null;
         }
         else{
             $flag=false;

@@ -10,6 +10,10 @@ and open the template in the editor.
 html {
     background-color: #EAEAEA;
 }
+
+#image_accueil {
+    text-align: center;
+}
 #page {
     margin: 0 auto;
     width: 80%;
